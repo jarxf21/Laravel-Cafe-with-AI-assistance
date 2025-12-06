@@ -12,5 +12,6 @@
     <div class="min-h-screen">
         {{ $slot }}
     </div>
+    @livewire('chat-bot')
 </body>
 </html>
