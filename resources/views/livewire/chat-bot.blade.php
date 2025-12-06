@@ -2,7 +2,7 @@
     <!-- Chat Window -->
     <div 
         x-data="{ scrollBottom() { $refs.chatContainer.scrollTop = $refs.chatContainer.scrollHeight } }"
-        x-init="$watch('open', value => { if(value) setTimeout(scrollBottom, 100) })"
+        x-init="$watch('$wire.isOpen', value => { if(value) setTimeout(() => scrollBottom(), 100) })"
         x-show="$wire.isOpen"
         x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0 translate-y-4 scale-95"

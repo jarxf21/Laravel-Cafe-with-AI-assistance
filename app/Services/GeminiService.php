@@ -13,7 +13,8 @@ class GeminiService
      */
     public function generateText(string $prompt): string
     {
-        $result = Gemini::geminiPro()->generateContent($prompt);
+          // Gunakan model yang baru
+        $result = Gemini::generativeModel(model: 'gemini-flash-latest')->generateContent($prompt);
         return $result->text();
     }
 
