@@ -16,7 +16,13 @@
 
     <!-- Main Content -->
     <div class="flex-1 p-4 md:p-8 overflow-y-auto h-screen">
-        <h1 class="text-3xl font-bold mb-6">Menu</h1>
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-bold">Menu</h1>
+            <a href="{{ route('my-orders') }}" class="px-4 py-2 bg-yellow-500 text-black font-bold rounded-lg shadow-sm hover:bg-yellow-400 transition flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                My Orders
+            </a>
+        </div>
 
         <!-- Categories -->
         <div class="flex space-x-4 mb-8 overflow-x-auto pb-2 scrollbar-hide">
